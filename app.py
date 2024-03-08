@@ -19,7 +19,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-"""
+
 @app.cli.command('db_create')
 def db_create():
     db.create_all()
@@ -30,7 +30,7 @@ def db_create():
 def db_drop():
     db.drop_all()
     print('Database dropped!')
-"""
+
 
 class Feedback(db.Model):
     __tablename__ = 'feedback'
